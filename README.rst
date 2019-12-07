@@ -7,8 +7,8 @@ keywords. for or use in Django models from Django version 1.11+.
 
 INSTALLATION
 ------------
-- `pip install git+https://github.com/NursErgesh/django_2gis_maps.git`
-- `pip install django_2gis_maps`
+- `pip install git@github.com:mrCrendel/django-seo-inline.git`
+- `pip install django-seo-inline`
 
 
 Quick start
