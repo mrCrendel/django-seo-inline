@@ -1,0 +1,11 @@
+{% load seo %}
+
+{% spaceless %}
+{% autoescape off %}
+{% if seo %}
+    {% if seo.description %}{% meta 'description' seo.description %}{% endif %}
+    {% if seo.keywords %}{% meta_list 'keywords' seo.keywords %}{% endif %}
+    {% if seo.title %}{% title_prop seo.title %}{% endif %}
+{% endif %}
+{% endautoescape %}
+{% endspaceless %}

@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+        {% include 'list-inline.html' with sample=object detail=True %}
+    </div>
+{% endblock %}

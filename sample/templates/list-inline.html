@@ -1,0 +1,24 @@
+<div class='col-12 col-md-10 mb-3 mx-auto'>
+    <div class='card'>
+        <div class='card-body'>
+            {% if sample.image %}
+                <a href="{{ sample.get_absolute_url }}">
+                    <img src="{{ sample.image.url }}" class='card-img-top' />
+                </a>
+            {% endif %}
+            <h5 class='card-title'>{{ sample.title }}</h5>
+            <p class='card-text'>
+                {% if truncate %}
+                    {{ sample.description|linebreaks|truncatewords:30 }}
+                {% else %}
+                    {{ sample.description|linebreaks }}
+                {% endif %}
+            </p>
+
+            {% if not detail %}
+                <a href="{{ sample.get_absolute_url }}">View</a>
+            {% endif %}
+        </div>
+
+    </div>
+</div>

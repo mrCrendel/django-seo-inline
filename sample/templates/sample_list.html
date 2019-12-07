@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        {% for object in object_list %}
+            {% include 'list-inline.html' with sample=object truncate=True detail=False %}
+        {% endfor %}
+    </div>
+{% endblock %}
