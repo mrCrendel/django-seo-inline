@@ -3,7 +3,7 @@ Django Seo Inline
 =================
 
 Django Seo Inline is a simple application that provides the basic seo meta attributes as title, description and
-keywords. for or use in Django models from Django version 1.11+.
+keywords. for use in Django models from Django version 1.11+.
 
 INSTALLATION
 ------------
