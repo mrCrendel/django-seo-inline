@@ -7,11 +7,11 @@ keywords. for use in Django models from Django version 1.11+.
 
 INSTALLATION
 ------------
-- `pip install git@github.com:mrCrendel/django-seo-inline.git`
-- `pip install django-seo-inline`
+- ``pip install git@github.com:mrCrendel/django-seo-inline.git``
+- ``pip install django-seo-inline``
 
 
-Quick start
+QUICK START
 -----------
 
 1. Add "django_seo_inline" to your INSTALLED_APPS setting like this::
@@ -38,6 +38,9 @@ Quick start
     class SampleModel(SeoAdminMixin, admin.ModelAdmin):
         pass
 
-4. - Run `python manage.py makemigrations` to create migrations for seo relations.
-   - Run `python manage.py migrate`
-5. in template `base.html` include `{% include "seo/seo.html" %}` in you header block.
+4.
+
+- Run ``python manage.py makemigrations`` to create migrations for seo relations.
+- Run ``python manage.py migrate``
+
+5. in template ``base.html`` include ``{% include "seo/seo.html" %}`` in you header block.
