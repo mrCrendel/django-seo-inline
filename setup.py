@@ -26,7 +26,7 @@ setup(
     author_email="tggrmi@gmail.com",
     description="Plugs for Seo Model Inline",
     # long_description=LONG_DESCRIPTION,
-    url="https://github.com/NursErgesh/django_2gis_maps.git",
+    url="https://github.com/mrCrendel/django-seo-inline",
     packages=("django-seo-inline",),
     include_package_data=True,
     install_requires=open('requirements/requirements.txt').read().splitlines(),
