@@ -30,7 +30,7 @@ setup(
     description="Plugs for Seo Model Inline",
     # long_description=LONG_DESCRIPTION,
     url="https://github.com/mrCrendel/django-seo-inline",
-    download_url='https://github.com/mrCrendel/django-seo-inline/archive/master.zip',
+    download_url='https://github.com/mrCrendel/django-seo-inline/archive/0.0.1.tar.gz',
     keywords=['seo', 'inline', 'meta-data'],
     packages=["django-seo-inline"],
     include_package_data=True,
