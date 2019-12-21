@@ -30,7 +30,7 @@ QUICK START
     class SampleModel(SeoModelMixin, models.Model):
         pass
 
-3. in the admin.py include the following::
+3. in the ``admin.py`` include the following::
 
     from django_seo_inline.admin import SeoAdminMixin
 
@@ -38,9 +38,26 @@ QUICK START
     class SampleModel(SeoAdminMixin, admin.ModelAdmin):
         pass
 
-4.
+4. In ``views`` we add ``SeoListMixin`` for generic ``ListView``, ``SeoDetailMixin`` for ``generic DetailView``::
 
+
+    class SampleListView(SeoListMixin, ListView):
+        model = SampleModel
+        ...
+
+    class SampleDetailView(SeoDetailMixin, DetailView):
+        model = SampleModel
+        ...
+
+5. Also packages supports generic ``TemplateView`` and others by ``PageMixinView`` just don't forget show ``seo_model`` field::
+
+    class IndexView(PageMixinView, TemplateView):
+        ...
+        seo_model = SampleSoloModel
+        ...
+
+6
 - Run ``python manage.py makemigrations`` to create migrations for seo relations.
 - Run ``python manage.py migrate``
 
-5. in template ``base.html`` include ``{% include "seo/seo.html" %}`` in you header block.
+7. in template ``base.html`` include ``{% include "seo/seo.html" %}`` in you header block.
